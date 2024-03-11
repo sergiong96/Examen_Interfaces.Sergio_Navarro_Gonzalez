@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#hero #map {
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero #listado {
+    width: 20%;
+    background-color: blue;
+    position: relative;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+#hero #listado h2 {
+    background-color: #ffc836;
+    color: blue;
+    display: flex;
+    margin: 0 0 0.2rem 0;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero #listado ul {
+    padding: 0;
+    margin: 0;
+}
+
+#hero #listado li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0;
+    border: 1px solid #ffc836;
+}
+
+#hero #listado li:hover {
+    background-color: #ffc836;
+}
+
+#hero #listado li:hover h4,
+#hero #listado li:hover p,
+#hero #listado li:hover button {
+    color: blue;
+}
+
+#hero #listado li:hover button {
+    background-color: #ffc836;
+    border: 2px solid blue;
+}
+
+#hero #listado h4 {
+    color: #ffc836;
+    font-weight: bold;
+}
+
+#hero #listado p {
+    color: #ffc836;
+}
+
+li button {
+    display: none;
+    background-color: blue;
+    color: #ffc836;
+    border: 2px solid #ffc836;
+    border-radius: 1rem;
+}
+
+li.active button {
+    display: block;
+    padding: 0.4rem;
+}
+
+dialog {
+    padding: 1.5rem;
+}
